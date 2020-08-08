@@ -1,0 +1,16 @@
+[package]
+name = "derive_pattern"
+version = "0.1.0"
+authors = ["Joseph Garvin <joseph.h.garvin@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+syn = {version="*", features=["full"]} # syn::Item requires "full" feature
+quote = "*"
+proc-macro2 = "1.0.18"
+Inflector = "0.11.4"
+
+[lib]
+proc-macro = true
